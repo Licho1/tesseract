@@ -117,3 +117,5 @@ times.txt
 
 /*.snap
 /*_source.tar.bz2
+/CMakeCache.txt
+/CMakeFiles/cmake.check_cache

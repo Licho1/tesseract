@@ -1,8 +1,8 @@
 local_settings:
-    #use_shared_libs: true
-    #short_local_names: true
+    use_shared_libs: false
+    short_local_names: true
     #use_cache: false
-    #generator: Visual Studio 14 2015 Win64
+    generator: Visual Studio 16 2019
     silent: false
     #copy_import_libs: true
     #build:
@@ -10,9 +10,9 @@ local_settings:
         #cxx_flags: /W0
     builds:
         vs2017:
-            generator: Visual Studio 15 2017
+            generator: Visual Studio 16 2019
         vs2017_64:
-            generator: Visual Studio 15 2017 Win64
+            generator: Visual Studio 16 2019
 
     dependencies:
         pvt.cppan.demo.danbloomberg.leptonica: 1
@@ -33,6 +33,7 @@ common_settings:
 
 projects:
     libtesseract:
+        shared_only: true
         type: lib
         export_all_symbols: true
         files:
